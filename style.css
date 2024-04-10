@@ -1,0 +1,29 @@
+body{
+    background-color:whitesmoke;
+}
+header{
+    text-align:center;
+}
+.navmenu{
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+img{
+    margin-top:40px;
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    border-color:darkgreen;
+}
+ul{
+    padding:10px;
+    background-color:darkseagreen;
+}
+li{
+    display:inline;
+    padding:0px 10px 0px 10px;
+}
+a{
+    color:black;
+}
