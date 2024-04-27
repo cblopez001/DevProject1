@@ -26,7 +26,6 @@ nav ul{
     justify-content:flex-start;
     list-style-type: none;
     flex:25%;
-    background-color: darkgreen;
 }
 
 a{
@@ -54,7 +53,6 @@ a:hover{
 
 main{
    /* background-color: rgb(8, 61, 22);*/
-    color:  rgb(8, 61, 22);
     padding: 3em 0 3em 0;
     flex:5;
 }
@@ -69,8 +67,7 @@ main{
 
 .right{
     align-self: flex-start;
-    background-color: rgb(8, 61, 22);
-    color: antiquewhite;
+    color:  rgb(8, 61, 22);
     padding: 3em 0 3em 0;
     flex: 7;
 }
