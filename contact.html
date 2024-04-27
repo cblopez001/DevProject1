@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header> 
+         <div>
+            <ul class="navmenu">
+                    <li><a href="/index.html">Home </a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+     </header>
+        <div class="main">
+            <main>
+                <h1>Get in Touch...</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate laboriosam iusto ullam velit praesentium iure consequuntur. Possimus odio, excepturi laborum aliquid quibusdam iste alias qui, vel autem, quia nihil.</p>
+            </main>
+            <aside class="right">
+                <form class="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn" id="popup" onclick="openPopup()">Submit</button>
+                    <div class="popup">
+                        <h1>Thank you for your message!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quidem.</p>
+                        <button type="button" onclick="closePopup()">Close</button>
+                    </div>
+                </form>
+            </aside>
+        </div>
+        <footer class="foot">FOOTER</footer>
+        <script>
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+   popup.classList.remove("open-popup");
+}
+        </script>
+</body>
+</html>

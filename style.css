@@ -1,29 +1,146 @@
-body{
-    background-color:whitesmoke;
+*{
+    margin:10px;
+    box-sizing: border-box;
 }
-header{
-    text-align:center;
-}
-.navmenu{
-    text-align:center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
+body{
+    height:95vh;
+    background-color:rgb(240, 249, 231);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
 }
-img{
-    margin-top:40px;
-    width: 120px;
-    height:120px;
-    border-radius: 50%;
-    border-color:darkgreen;
+
+header{
+    background-color: rgb(8, 61, 22);
+    color: antiquewhite;
+    padding:2em 0 2em 0;
 }
-ul{
-    padding:10px;
-    background-color:darkseagreen;
+/* NAVIGATION CONTROL CSS */
+nav ul{
+    display: flex;
+    justify-content:flex-start;
+    list-style-type: none;
+    flex:25%;
+    background-color: darkgreen;
 }
-li{
-    display:inline;
-    padding:0px 10px 0px 10px;
-}
+
 a{
-    color:black;
+    color:antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+ul > li{
+    display:inline-block;
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*MAIN BODY CSS*/
+.main{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+
+main{
+   /* background-color: rgb(8, 61, 22);*/
+    color:  rgb(8, 61, 22);
+    padding: 3em 0 3em 0;
+    flex:5;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    padding: 3em 0 3em 0;
+    flex:5;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+.right{
+    align-self: flex-start;
+    background-color: rgb(8, 61, 22);
+    color: antiquewhite;
+    padding: 3em 0 3em 0;
+    flex: 7;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: start;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(8, 61, 22);
+    color: antiquewhite;
+    padding: 3em 0 3em 0;
+    text-align: center;
+}
+td, th {
+    padding: 8px;
+}
+
+/*CONTACT FORM CSS*/
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(8, 61, 22);
+    color: antiquewhite;
+    padding: 3em 0 3em 0;
+    flex: 1;
+    border-radius: 25px;
+}
+
+.btn{
+    padding: 10;
+    cursor: pointer;
+}
+
+.popup{
+    width: 400px;
+    background-color:antiquewhite;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 20px;
+    visibility: hidden;
+    transition:transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1)
+}
+
+/*FOOTER CSS*/
+
+footer{
+    background-color: rgb(8, 61, 22);
+    color: antiquewhite;
+    padding: 1em 0 1em 0;
+}
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5 em 0 5em 0;
+    }
 }
