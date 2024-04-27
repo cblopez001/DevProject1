@@ -7,33 +7,49 @@
     <title>Contact Form</title>
 </head>
 <body>
-    <header>
-        <h1><a href="../index.html/index.html" id="Site-name" >Cherakye Lopez</a></h1>
-        <div>
+    <header> 
+         <div>
             <ul class="navmenu">
-                    <li> <a href="/index.html">Home </a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="/index.html">Home </a></li>
+                    <li><a href="/projects.html">Projects</a></li>
                     <li><a href="/contact.html" target="_blank">Contact</a></li>
             </ul>
         </div>
-    </header>
-   
-     <div class="contact-form">
-            <form  class="form" action="" method="post">
-                <h2>Get in Touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque expedita odit? Vel, laudantium voluptatibus, pariatur maiores cupiditate esse temporibus recusandae dolore accusamus neque rerum labore deleniti nulla architecto veniam!</p>
-            <label for="Name">Name</label>
-            <input type="text" id="name" placeholder="Jane Doe">
-            <br>
-            <label for="Email">Email</label>
-            <input type="text" id="name" placeholder="Email Address">
-            <br>
-            <label for="Message">Message</label>
-                <textarea id="name" placeholder="Type Message Here..."></textarea>
-            <br>
-            <button type="submit">Submit</button>
-            </form>
-     </div>
-   
+     </header>
+        <div class="main">
+            <main>
+                <h1>Get in Touch...</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate laboriosam iusto ullam velit praesentium iure consequuntur. Possimus odio, excepturi laborum aliquid quibusdam iste alias qui, vel autem, quia nihil.</p>
+            </main>
+            <aside class="right">
+                <form class="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn" id="popup" onclick="openPopup()">Submit</button>
+                    <div class="popup">
+                        <h1>Thank you for your message!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quidem.</p>
+                        <button type="button" onclick="closePopup()">Close</button>
+                    </div>
+                </form>
+            </aside>
+        </div>
+        <footer class="foot">FOOTER</footer>
+        <script>
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+function closePopup() {
+   popup.classList.remove("open-popup");
+}
+        </script>
 </body>
 </html>
