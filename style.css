@@ -1,42 +1,42 @@
 body{
     background-color:whitesmoke;
+    height:100%;
 }
+
+/* This is the CSS for the Navigation Conatiner */
 header{
     text-align:center;
+    margin: 0;
 }
 
 .code_banner{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    text-align:center
-    width:50%;
-    height:10%;
-    margin:0;
-    padding:0;
+    align-items: center;
 }
 
+.code_banner ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
 .code-img{
     width: 20px;
     height:20px;
 }
-.navmenu{
+
+nav ul{
     display:flex;
     flex-direction: row;
     justify-content:space-around;
     text-align:center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    background-color: darkseagreen;
 }
 
-ul{
-    display:flex;
-    flex-direction: row;
-    padding:10px;
-    width:100%;
-    background-color:darkseagreen;
-}
-li{
+nav li{
     list-style-type: none;
     padding:0px 10px 0px 10px;
 }
@@ -44,6 +44,46 @@ a{
     text-decoration: none;
     color:black;
 }
+
+/* This is the CSS for the About Me and Resume Container */
+
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    width: 50%;
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    width: 50%;
+}
+.edu_list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.work_list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
 
 /*Contact Form Page*/
 
@@ -94,7 +134,6 @@ button{
     justify-content:space-around;
     align-items: center;
     text-align: center;
-
 }
 
 .project-card{
